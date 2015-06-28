@@ -248,15 +248,15 @@ your extruder heater takes 2 minutes to hit the target on heating.
 // uncomment the 2 defines below:
 
 // Parameters for all extruder heaters
-#define THERMAL_RUNAWAY_PROTECTION_PERIOD 40 //in seconds
-#define THERMAL_RUNAWAY_PROTECTION_HYSTERESIS 4 // in degree Celsius
+//#define THERMAL_RUNAWAY_PROTECTION_PERIOD 40 //in seconds
+//#define THERMAL_RUNAWAY_PROTECTION_HYSTERESIS 4 // in degree Celsius
 
 // If you want to enable this feature for your bed heater,
 // uncomment the 2 defines below:
 
 // Parameters for the bed heater
-#define THERMAL_RUNAWAY_PROTECTION_BED_PERIOD 20 //in seconds
-#define THERMAL_RUNAWAY_PROTECTION_BED_HYSTERESIS 2 // in degree Celsius
+//#define THERMAL_RUNAWAY_PROTECTION_BED_PERIOD 20 //in seconds
+//#define THERMAL_RUNAWAY_PROTECTION_BED_HYSTERESIS 2 // in degree Celsius
 //===========================================================================
 
 
@@ -480,8 +480,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // default settings
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402,      78.7402,        200.0*8/3,      760*1.1}  // default steps per unit for Ultimaker
-#define DEFAULT_AXIS_STEPS_PER_UNIT {80,80,1594.7540992, 760*1.1}
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 25}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT {80,80,1594.7540992, 88}
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 15}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
@@ -527,7 +527,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define PLA_PREHEAT_HPB_TEMP 70
 #define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 240
+#define ABS_PREHEAT_HOTEND_TEMP 210
 #define ABS_PREHEAT_HPB_TEMP 100
 #define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
@@ -537,7 +537,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define SDSUPPORT // Enable SD Card Support in Hardware Console
 //#define SDSLOW // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 //#define SD_CHECK_AND_RETRY // Use CRC checks and retries on the SD communication
-#define ENCODER_PULSES_PER_STEP -1 // Increase if you have a high resolution encoder
+#define ENCODER_PULSES_PER_STEP -2 // Increase if you have a high resolution encoder
 //#define ENCODER_STEPS_PER_MENU_ITEM 5 // Set according to ENCODER_PULSES_PER_STEP or your liking
 //#define ULTIMAKERCONTROLLER //as available from the Ultimaker online store.
 //#define ULTIPANEL  //the UltiPanel as on Thingiverse
